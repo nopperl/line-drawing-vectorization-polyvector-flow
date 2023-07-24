@@ -1,0 +1,8 @@
+version: "3.9"
+name: line-drawing-vectorization-polyvector-flow
+services:
+  gpu:
+    entrypoint: /workspace/line-drawing-vectorization-polyvector-flow/entrypoint.sh
+    volumes:
+      - ./outputs:/workspace/line-drawing-vectorization-polyvector-flow/outputs
+    shm_size: 128G
