@@ -1,4 +1,6 @@
 #!/bin/sh
+set -euo pipefail
+
 filepath=$1
 filename=$(basename "$filepath")
 mkdir -p ./outputs/runtime/
